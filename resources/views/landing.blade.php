@@ -848,7 +848,7 @@
             setTimeout(() => search.focus(), 350);
         };
 
-        browseBtn.addEventListener("click", goPortfolio);
+        if (browseBtn) browseBtn.addEventListener("click", goPortfolio);
         ctaHero.addEventListener("click", () => showToast(`Hook this CTA to your contact form / calendar link.`));
         ctaTop.addEventListener("click", () => showToast(`Hook this CTA to your contact form / calendar link.`));
 
